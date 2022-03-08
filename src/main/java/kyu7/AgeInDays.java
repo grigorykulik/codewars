@@ -1,5 +1,9 @@
 package kyu7;
 
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.ZoneOffset;
+
 /**
  * https://www.codewars.com/kata/5803753aab6c2099e600000e
  *
@@ -14,5 +18,12 @@ package kyu7;
  */
 
 public class AgeInDays {
+    public static String getDays(int year, int month, int day) {
+        int result = (int) Duration
+                .between(
+                        LocalDate.of(year, month, day).atStartOfDay().toInstant(ZoneOffset.UTC),
+                        LocalDate.now().atStartOfDay().atOffset(ZoneOffset.UTC)).toDays();
 
+        return String.format("You are %d days old", result);
+    }
 }
