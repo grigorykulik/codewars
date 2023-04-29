@@ -9,7 +9,7 @@ import static java.util.Arrays.stream;
  * https://www.codewars.com/kata/54da5a58ea159efa38000836
  * Given an array of integers, find the one that appears an odd number of times.
  * There will always be only one integer that appears an odd number of times.
- *
+ * <p>
  * Examples
  * [7] should return 7, because it occurs 1 time (which is odd).
  * [0] should return 0, because it occurs 1 time (which is odd).
@@ -25,8 +25,8 @@ public class FindOddInt {
         Map<Integer, Integer> map = new HashMap<>();
 
         stream(a)
-                        .distinct()
-                                .forEach(number -> map.put(number, 0));
+                .distinct()
+                .forEach(number -> map.put(number, 0));
 
         map.entrySet()
                 .stream()
@@ -37,11 +37,11 @@ public class FindOddInt {
                 });
 
         return
-        map.entrySet()
-                .stream()
-                .filter(entry -> !(entry.getValue() % 2 == 0))
-                .collect(Collectors.toList())
-                .get(0).getKey();
+                map.entrySet()
+                        .stream()
+                        .filter(entry -> !(entry.getValue() % 2 == 0))
+                        .collect(Collectors.toList())
+                        .get(0).getKey();
     }
 
     public static int cleverSolution(int[] arr) {
