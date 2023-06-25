@@ -2,7 +2,7 @@ package kyu7tests;
 
 import static org.junit.Assert.*;
 
-import kyu7.Mumbling;
+import cw.kyu7.Mumbling;
 import org.junit.Test;
 
 

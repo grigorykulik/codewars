@@ -1,6 +1,6 @@
 package kyu7tests;
 
-import kyu7.NthPowerRulesThemAll;
+import cw.kyu7.NthPowerRulesThemAll;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 

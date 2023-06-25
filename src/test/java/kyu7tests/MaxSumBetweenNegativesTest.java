@@ -1,5 +1,5 @@
 package kyu7tests;
-import kyu7.MaxSumBetweenNegatives;
+import cw.kyu7.MaxSumBetweenNegatives;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

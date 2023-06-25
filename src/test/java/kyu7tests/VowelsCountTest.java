@@ -1,6 +1,6 @@
 package kyu7tests;
 
-import kyu7.VowelsCount;
+import cw.kyu7.VowelsCount;
 import org.junit.jupiter.api.Test;
 import static org.junit.Assert.assertEquals;
 

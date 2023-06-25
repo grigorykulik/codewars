@@ -1,6 +1,6 @@
 package kyu7tests;
 
-import kyu7.AgeInDays;
+import cw.kyu7.AgeInDays;
 import org.junit.jupiter.api.Test;
 import static org.junit.Assert.assertEquals;
 
